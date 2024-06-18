@@ -4,24 +4,24 @@ public class Calculadora {
     public static void main(String[] args) throws Exception {
 
         double resultado = 0;
-        Scanner leitura = new Scanner(System.in);
+        Scanner leituraDouble = new Scanner(System.in);
 
 
         System.out.println("Digite o primeiro valor");
-        double valor1 = leitura.nextDouble();
+        double valor1 = leituraDouble.nextDouble();
 
-        Scanner bosta = new Scanner(System.in);
+        Scanner leituraString = new Scanner(System.in);
         System.out.print("""
                         Para somar digite +
                         Para subtrair digite -
                         Para multiplicar digite *
                         Para dividir digite /
                         """);
-        String operador = bosta.nextLine();
+        String operador = leituraString.nextLine();
 
 
         System.out.println("Digite o segundo valor");
-        double valor2 = leitura.nextDouble();
+        double valor2 = leituraDouble.nextDouble();
         switch (operador) {
             case "+":
                 resultado = valor1 + valor2;
